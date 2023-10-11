@@ -9623,6 +9623,14 @@ func (u *User) GetLocation() string {
 	return *u.Location
 }
 
+// GetLocale returns the Locale field if it's non-nil, zero value otherwise.
+func (u *User) GetLocale() string {
+	if u == nil || u.Locale == nil {
+		return ""
+	}
+	return *u.Locale
+}
+
 // GetLoginsCount returns the LoginsCount field if it's non-nil, zero value otherwise.
 func (u *User) GetLoginsCount() int64 {
 	if u == nil || u.LoginsCount == nil {

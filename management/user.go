@@ -48,6 +48,9 @@ type User struct {
 	// The user-defined location for this account’s profile.
 	Location *string `json:"location,omitempty"`
 
+	// The user-defined locale for this account’s profile.
+	Locale *string `json:"locale,omitempty"`
+
 	// The users' password (mandatory for non SMS connections)
 	Password *string `json:"password,omitempty"`
 
